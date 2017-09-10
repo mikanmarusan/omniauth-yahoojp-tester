@@ -100,7 +100,7 @@ GEM
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
-    omniauth-yahoojp (0.1.2)
+    omniauth-yahoojp (0.1.4)
       httpauth
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.1)
@@ -191,7 +191,7 @@ DEPENDENCIES
   oauth2
   omniauth
   omniauth-oauth2
-  omniauth-yahoojp
+  omniauth-yahoojp (~> 0.1.4)
   puma (~> 3.0)
   rails (~> 5.0.1)
   sass-rails (~> 5.0)
@@ -205,4 +205,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.13.7
+   1.15.4
