@@ -1,5 +1,11 @@
 <div id="user">
-  <p>Hello, <%= @name %> さん</p>
+  <p>Hello, <%= @nickname %> さん</p>
+  <div id="response">
+ Response:
+ <ul>
+   <li><%= @extra %></li>
+ </ul>
+  </div>
   <div id="credentials">
  Credentials:
  <ul>
@@ -9,13 +15,33 @@
  </ul>
   </div>
   <div id="userinfo">
- UserInfo:
+ UserInfo: <%= @uid %>
  <ul>
-   <li>user_id:    <%= @user_id %></li>
-   <li>email:      <%= @email %></li>
-   <li>name:       <%= @name %></li>
-   <li>first_name: <%= @first_name %></li>
-   <li>last_name:  <%= @last_name %></li>
+   <li>sub: <%= @sub %></li>
+   <li>name: <%= @name %></li>
+   <li>given_name: <%= @given_name %></li>
+   <li>given_name_ja_kana_jp: <%= @given_name_ja_kana_jp %></li>
+   <li>given_name_ja_hani_jp: <%= @given_name_ja_hani_jp %></li>
+   <li>family_name: <%= @family_name %></li>
+   <li>family_name_ja_kana_jp: <%= @family_name_ja_kana_jp %></li>
+   <li>family_name_ja_hani_jp: <%= @family_name_ja_hani_jp %></li>
+   <li>gender: <%= @gender %></li>
+   <li>zoneinfo: <%= @zoneinfo %></li>
+   <li>locale: <%= @locale %></li>
+   <li>birthdate: <%= @birthdate %></li>
+   <li>nickname: <%= @nickname %></li>
+   <li>picture: <%= @picture %></li>
+   <li>email: <%= @email %></li>
+   <li>email_verified: <%= @email_verified %></li>
+   <li>address
+      <ul>
+         <li>country: <%= @address['country'] %></li>
+         <li>postal_code: <%= @address['postal_code'] %></li>
+         <li>region: <%= @address['region'] %></li>
+         <li>locality: <%= @address['locality'] %></li>
+         <li>formatted: <%= @address['formatted'] %></li>
+      </ul>
+   </li>
  </ul>
   </div>
 </div>
